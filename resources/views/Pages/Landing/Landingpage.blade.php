@@ -483,7 +483,7 @@
         <div class="hero-content">
             <h1>Mau nitip? Mau dititipin? Ada disini!</h1>
             <p>Titip barang atau belikan barang dari luar negeri dengan mudah dan aman</p>
-            <a href="#about" class="cta-button">Pelajari Lebih Lanjut</a>
+            <a href="/admin" class="cta-button">Pelajari Lebih Lanjut</a>
         </div>
     </section>
 
@@ -504,7 +504,7 @@
                         <li>Harga lebih murah dari toko lokal</li>
                         <li>Proses pembelian yang mudah</li>
                     </ul>
-                    <a href="#" class="cta-button">Pesan Sekarang</a>
+                    <a href="/customer" class="cta-button">Pesan Sekarang</a>
                 </div>
                 <div class="about-box">
                     <h3>Sebagai Penyedia Jasa (Jastiper)</h3>
@@ -515,7 +515,7 @@
                         <li>Memaksimalkan bagasi saat bepergian</li>
                         <li>Jaringan yang lebih luas</li>
                     </ul>
-                    <a href="#" class="cta-button" style="background-color: var(--secondary);">Daftar Jadi Jastiper</a>
+                    <a href="/jastiper" class="cta-button" style="background-color: var(--secondary);">Daftar Jadi Jastiper</a>
                 </div>
             </div>
         </div>

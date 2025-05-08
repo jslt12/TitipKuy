@@ -219,7 +219,7 @@
                         <span class="country-tag">Jepang</span>
                         <span class="country-tag">Korea</span>
                     </div>
-                    <a href="#" class="view-profile">Lihat Profil</a>
+                    <a href="/admin" class="view-profile">Lihat Profil</a>
                 </div>
             </div>
 
@@ -241,7 +241,7 @@
                         <span class="country-tag">USA</span>
                         <span class="country-tag">UK</span>
                     </div>
-                    <a href="#" class="view-profile">Lihat Profil</a>
+                    <a href="/jastiper" class="view-profile">Lihat Profil</a>
                 </div>
             </div>
 
@@ -263,7 +263,7 @@
                         <span class="country-tag">Singapura</span>
                         <span class="country-tag">Malaysia</span>
                     </div>
-                    <a href="#" class="view-profile">Lihat Profil</a>
+                    <a href="/" class="view-profile">Lihat Profil</a>
                 </div>
             </div>
         </section>

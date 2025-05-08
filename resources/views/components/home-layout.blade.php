@@ -242,6 +242,9 @@
         <a href="/admin"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
         <a href="/admin/users"><i class="fas fa-users"></i> Manajemen User</a>
         <a href="/admin/reports"><i class="fas fa-chart-bar"></i> Laporan</a>
+        <a href="/customer">Customer</a>
+        <a href="/">Landing</a>
+        <a href="/jastiper">Jastiper</a>
     </div>
 
     <div class="main-wrapper">

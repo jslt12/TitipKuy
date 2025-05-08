@@ -33,9 +33,8 @@ Route::get('/admin/users', function () {
 });
 
 
-
 Route::get('/customer', function () {
-    return view('Pages.Customer.customer'); 
+    return view('Pages.Customer.customer_index'); 
 })->name('customer');
 
 Route::get('/dashboard', function () {

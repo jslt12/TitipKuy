@@ -340,7 +340,7 @@
                     <p>Ringkasan aktivitas dan pesanan Anda</p>
                 </div>
                 <div class="dashboard-actions">
-                    <a href="#" class="btn btn-secondary"><i class="fas fa-plus"></i> Tambah Perjalanan</a>
+                    <a href="/admin" class="btn btn-secondary"><i class="fas fa-plus"></i> Tambah Perjalanan</a>
                 </div>
             </div>
 
@@ -368,7 +368,7 @@
             <div class="dashboard-section">
                 <div class="section-header">
                     <h2>Pesanan Terbaru</h2>
-                    <a href="jastiper-orders.html" class="btn">Lihat Semua</a>
+                    <a href="/" class="btn">Lihat Semua</a>
                 </div>
                 
                 <div class="order-item">
@@ -406,7 +406,7 @@
             <div class="dashboard-section">
                 <div class="section-header">
                     <h2>Perjalanan Mendatang</h2>
-                    <a href="#" class="btn">Kelola Perjalanan</a>
+                    <a href="/customer" class="btn">Kelola Perjalanan</a>
                 </div>
                 
                 <div class="upcoming-trips">
