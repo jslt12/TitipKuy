@@ -32,6 +32,8 @@ Route::get('/admin/users', function () {
     return view('Pages.Admin.manajemen-user');
 });
 
+
+
 Route::get('/customer', function () {
     return view('Pages.Customer.customer'); 
 })->name('customer');

@@ -471,6 +471,7 @@
                         <li><a href="#testimonial">Testimoni</a></li>
                         <li><a href="#faq">Q&A</a></li>
                         <li><a href="#report">Report</a></li>
+                        <li><a href="{{ route('login') }}">Login</a></li>
                     </ul>
                 </nav>
             </div>
