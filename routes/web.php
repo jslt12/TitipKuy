@@ -24,21 +24,6 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-// Route Pesanan
-Route::get('/pesanan', function () {
-    return view('pesanan'); // Mengarah ke resources/views/pesanan.blade.php
-})->name('pesanan');
-
-// Route Chat
-Route::get('/chat', function () {
-    return view('chat'); // Mengarah ke resources/views/chat.blade.php
-})->name('chat');
-
-// Route Akun
-Route::get('/akun', function () {
-    return view('akun'); // Mengarah ke resources/views/akun.blade.php
-})->name('akun');
-
 // Route untuk melihat profil Jastiper (dengan ID dinamis)
 Route::get('/jastiper/{id}', function ($id) {
     return view('jastiper.profile', ['id' => $id]);
