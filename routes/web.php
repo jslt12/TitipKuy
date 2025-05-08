@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/landing', function () {
+Route::get('/', function () {
     return view('Pages.Landing.Landingpage');
 })->name('Landingppage.index');
 
