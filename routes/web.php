@@ -32,6 +32,9 @@ Route::get('/admin/users', function () {
     return view('Pages.Admin.manajemen-user');
 });
 
+Route::get('/chat', function () {
+    return view('Pages.Justiper.chat-jastiper');
+});
 
 Route::get('/customer', function () {
     return view('Pages.Customer.customer_index'); 

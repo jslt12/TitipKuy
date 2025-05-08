@@ -143,7 +143,7 @@
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Pesanan</a></li>
-                    <li><a href="#">Chat</a></li>
+                    <li><a href="/chat">Chat</a></li>
                     <li><a href="#">Akun</a></li>
                     <li>
                         <div class="user-profile">
