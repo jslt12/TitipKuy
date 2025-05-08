@@ -13,6 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Landing
 Route::get('/', function () {
     return view('welcome');
 });
+
+// Customer
+
+// Admin
+
+// Justiper
