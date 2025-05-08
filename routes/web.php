@@ -18,6 +18,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/admin', function () {
+    return view('Pages.Admin.dashboard');
+});
+Route::get('/admin/reports', function () {
+    return view('Pages.Admin.laporan');
+});
+Route::get('/admin/users', function () {
+    return view('Pages.Admin.manajemen-user');
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
