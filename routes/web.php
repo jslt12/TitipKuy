@@ -8,9 +8,8 @@ use Illuminate\Support\Facades\Route;
 | Web Routes
 |--------------------------------------------------------------------------
 |
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
+| Di sini adalah tempat Anda mendaftarkan web routes untuk aplikasi Anda.
+| Semua route ini dimuat oleh RouteServiceProvider dan diberikan middleware "web".
 |
 */
 
@@ -28,14 +27,46 @@ Route::get('/admin/users', function () {
     return view('Pages.Admin.manajemen-user');
 });
 
+Route::get('/customer', function () {
+    return view('Pages.Customer.customer_index'); 
+})->name('customer.index');
+
+// Route Dashboard (khusus user yang sudah login dan terverifikasi)
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
+// Route Pesanan
+Route::get('/pesanan', function () {
+    return view('pesanan'); // Mengarah ke resources/views/pesanan.blade.php
+})->name('pesanan');
+
+// Route Chat
+Route::get('/chat', function () {
+    return view('chat'); // Mengarah ke resources/views/chat.blade.php
+})->name('chat');
+
+// Route Akun
+Route::get('/akun', function () {
+    return view('akun'); // Mengarah ke resources/views/akun.blade.php
+})->name('akun');
+
+// Route untuk melihat profil Jastiper (dengan ID dinamis)
+Route::get('/jastiper/{id}', function ($id) {
+    return view('jastiper.profile', ['id' => $id]);
+})->name('jastiper.profile');
+
+// Route untuk Search Jastiper
+Route::get('/search', function () {
+    return view('search'); // Mengarah ke resources/views/search.blade.php
+})->name('search');
+
+// Route Group yang membutuhkan login (auth)
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+// Route untuk auth bawaan Laravel Breeze atau Fortify
 require __DIR__.'/auth.php';
