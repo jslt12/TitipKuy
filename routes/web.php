@@ -14,12 +14,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('Pages.Landing.Landingpage');
-})->name('Landingppage.index');
+    return view('Pages.Landing.landingpage');
+})->name('landingppage');
 
 Route::get('/admin', function () {
     return view('Pages.Admin.dashboard');
 });
+
+Route::get('/jastiper', function () {
+    return view('Pages.Justiper.jastiper');
+});
+
 Route::get('/admin/reports', function () {
     return view('Pages.Admin.laporan');
 });
@@ -28,8 +33,8 @@ Route::get('/admin/users', function () {
 });
 
 Route::get('/customer', function () {
-    return view('Pages.Customer.customer_index'); 
-})->name('customer.index');
+    return view('Pages.Customer.customer'); 
+})->name('customer');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
